@@ -24,7 +24,7 @@ function App() {
   );
 
   async function getData() {
-    let link = `http://api.weatherapi.com/v1/current.json`;
+    let link = `https://api.weatherapi.com/v1/current.json`;
 
     let key = "8e46beb75aec4fa8b76105922211504";
 
