@@ -3,31 +3,31 @@ function App() {
     <div className="App">
       <div class="header">
         <h1>Weather and pollution info</h1>
-        <div class="form">
-          <div class="location">
+        <div className="form">
+          <div className="location">
             <span>Location: </span> <input type="”text”" />
           </div>
           <button onClick={(e) => getData()}>Get info</button>
         </div>
       </div>
 
-      <div class="content">
-        <h1 class="name">sample</h1>
+      <div className="content">
+        <h1 className="name">sample</h1>
         <p>
-          <span class="temperature"></span>
+          <span className="temperature"></span>
         </p>
         <p>
-          <span class="quality"></span>
+          <span className="quality"></span>
         </p>
       </div>
     </div>
   );
 
   async function getData() {
-    console.log("inside get data");
     let link = `http://api.weatherapi.com/v1/current.json`;
 
     let key = "8e46beb75aec4fa8b76105922211504";
+
     let content = document.querySelector(".content");
 
     let q = document.querySelector("input").value;
